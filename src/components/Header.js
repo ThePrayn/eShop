@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaShoppingCart } from "react-icons/fa";
+import Order from './Order';
 export default function Header(props) {
     const [cartOpen, setCartOpen] = useState(false)
     const changeCart = () => 
@@ -18,7 +19,7 @@ export default function Header(props) {
             </ul>
             <FaShoppingCart onClick={changeCart} className={`shop-cart-button ${cartOpen && 'active'}`}/>
         
-            {cartOpen && (<div className='shop-cart'></div>)}
+            {cartOpen && (<div className='shop-cart'>{props.orders.map(el => (<Order key={el.id} item={el}/>))}</div>)}
         </div>
         <div className='presentation'></div>
     </header>
