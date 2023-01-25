@@ -10,7 +10,7 @@ return (
 <p>{item.desc}</p>
 <b>{item.price}$</b>
 
-<button className='add-to-card' onClick={() => props.onAdd(item)} >+</button>
+<button className='add-to-card' onClick={() => props.onAdd(item)}>+</button>
 </div>
 );
 }
