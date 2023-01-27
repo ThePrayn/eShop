@@ -8,7 +8,9 @@ export default function Footer() {
   
     return (
     <footer>
-        Все права защищены &copy;
+        <b>Power by THEPRAYN</b>
+        <p></p>  
+        <b>All rights reserved&copy;</b> 
     </footer>
   )
 }
