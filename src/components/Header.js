@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaShoppingCart } from "react-icons/fa";
 import Order from './Order';
+import { Link } from "react-scroll";
 
 const showOrders = (props) => {
     let sum = 0
@@ -27,7 +28,7 @@ export default function Header(props) {
             <span className='logo'>Coffee Staff</span>
             <ul className='nav'>
                 <li>About us</li>
-                <li>Our goods</li>
+                <li> <Link to='goods' smooth={true} offset={-60} duration={800} >Our goods</Link></li>
                 <li>Contacts</li>
             </ul>
             <FaShoppingCart onClick={changeCart} className={`shop-cart-button ${cartOpen && 'active'}`}/>
