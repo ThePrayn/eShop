@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Items from './components/Items';
 import Catigories from './components/Catigories';
 import ShowFullItem from './components/ShowFullItem';
+import About from './components/About';
 
 function App() {
 const [cartItems, setCartItems] = useState([]);
@@ -94,6 +95,7 @@ const onShowItem = (item) =>{
 return (
 <div className='wrapper'>
 <Header orders={cartItems} onDel={deleteOrder}/>
+<About/>
 <Catigories getCategory={getCategory}/>
 <Items onShowItem={onShowItem} items={categItems} onAdd={addToOrder}/>
 {showFullItem.show && <ShowFullItem onShowItem={onShowItem} item={showFullItem.fullItem}/>}

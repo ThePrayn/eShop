@@ -19,9 +19,8 @@ body{
     margin: 50px auto;
 }
 header {
-    
     position: relative;
-    background-color: #c7beaa86;
+    background-color: #e2dccdd0;;
     padding-top: 20px;
     padding-bottom: 0;
     border: 3px solid black;
@@ -150,6 +149,22 @@ header .shop-cart .item .delete-icon:hover {
     color: rgb(151, 18, 18);
     transform: scale(1.5);
 }
+
+.about {
+    margin-top: 50px;
+    position: relative;
+    background-color: #e2dccdd0;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: center;
+ }
+ .about h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
 .sum {
     float: left;
     width: 100%;
@@ -164,7 +179,7 @@ header .shop-cart .item .delete-icon:hover {
 
 .categ div{
     display: inline-block;
-    background-color: #c7beaa86;
+    background-color: #e2dccdd0;;
     border-radius: 50px;
     padding: 10px 20px;
     margin-bottom: 25px;
@@ -274,6 +289,6 @@ footer{
     text-align: center;
     height: 100px;
     margin-top: 100px;
-    background-color: #c7beaad7;
+    background-color: #e2dccdd0;;
     padding: 20px;
 }

@@ -27,7 +27,7 @@ export default function Header(props) {
         <div>
             <span className='logo'>Coffee Staff</span>
             <ul className='nav'>
-                <li>About us</li>
+                <li> <Link to='about' smooth={true} offset={-60} duration={800}> About us </Link> </li>
                 <li> <Link to='goods' smooth={true} offset={-60} duration={800} >Our goods</Link></li>
                 <li>Contacts</li>
             </ul>
